@@ -33,8 +33,10 @@ public class LoginPage extends ProjectSpecificMethod{
 
 	}
 
-	
-
+	public LogoutPage Logout() {
+		driver.findElement(By.xpath("//a[text()='Logout']")).click();
+		return new LogoutPage(driver);
+	}
 	
 	}
 
